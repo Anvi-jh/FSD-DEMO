@@ -6,7 +6,7 @@ app.use(express.json());
 
 mongoose.connect("mongodb://localhost:27017/EcommerceDemo")
   .then(() => console.log("MongoDB Connected"))
-  .catch(err => console.log(err));
+  // .catch(err => console.log(err));
 
 const productRoutes = require("./routes/productRoutes");
 const userRoutes = require("./routes/userRoutes");
